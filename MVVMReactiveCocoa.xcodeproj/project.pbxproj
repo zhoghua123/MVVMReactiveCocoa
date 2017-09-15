@@ -340,41 +340,6 @@
 			remoteGlobalIDString = D0040CBB19FEC418002869A6;
 			remoteInfo = "ISO8601DateFormatter iOS";
 		};
-		242453211A80D85300FFFCC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 242452E21A80D78800FFFCC1 /* OctoKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D0040CF219FEC579002869A6;
-			remoteInfo = "OctoKit iOS";
-		};
-		242453261A80D86300FFFCC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 242452F21A80D79D00FFFCC1 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D047260B19E49F82006002AA;
-			remoteInfo = "ReactiveCocoa-iOS";
-		};
-		2424532A1A80D86E00FFFCC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 242453011A80D7AB00FFFCC1 /* Mantle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D0E9C35619F6DB38000D427D;
-			remoteInfo = "Mantle-iOS";
-		};
-		2424532E1A80D87300FFFCC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 242453101A80D81700FFFCC1 /* OctoKitDependencies.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D0040C9819FEC274002869A6;
-			remoteInfo = "AFNetworking iOS";
-		};
-		242453321A80D87D00FFFCC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 242453101A80D81700FFFCC1 /* OctoKitDependencies.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D0040CBA19FEC418002869A6;
-			remoteInfo = "ISO8601DateFormatter iOS";
-		};
 		242D4FEF1A64B6FA0026ABC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 242D4FCD1A64B6FA0026ABC6 /* Project object */;
@@ -1547,11 +1512,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				242453221A80D85300FFFCC1 /* PBXTargetDependency */,
-				242453271A80D86300FFFCC1 /* PBXTargetDependency */,
-				2424532B1A80D86E00FFFCC1 /* PBXTargetDependency */,
-				2424532F1A80D87300FFFCC1 /* PBXTargetDependency */,
-				242453331A80D87D00FFFCC1 /* PBXTargetDependency */,
 			);
 			name = MVVMReactiveCocoa;
 			productName = MVVMReactiveCocoa;
@@ -1591,8 +1551,8 @@
 				TargetAttributes = {
 					242D4FD41A64B6FA0026ABC6 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = V45CY933KN;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = JT87XR82RB;
+						ProvisioningStyle = Automatic;
 					};
 					242D4FED1A64B6FA0026ABC6 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -1858,7 +1818,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4D0057EB98400EC217E50A13 /* [CP] Embed Pods Frameworks */ = {
@@ -1933,7 +1893,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2098,31 +2058,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		242453221A80D85300FFFCC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OctoKit iOS";
-			targetProxy = 242453211A80D85300FFFCC1 /* PBXContainerItemProxy */;
-		};
-		242453271A80D86300FFFCC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ReactiveCocoa-iOS";
-			targetProxy = 242453261A80D86300FFFCC1 /* PBXContainerItemProxy */;
-		};
-		2424532B1A80D86E00FFFCC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Mantle-iOS";
-			targetProxy = 2424532A1A80D86E00FFFCC1 /* PBXContainerItemProxy */;
-		};
-		2424532F1A80D87300FFFCC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "AFNetworking iOS";
-			targetProxy = 2424532E1A80D87300FFFCC1 /* PBXContainerItemProxy */;
-		};
-		242453331A80D87D00FFFCC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ISO8601DateFormatter iOS";
-			targetProxy = 242453321A80D87D00FFFCC1 /* PBXContainerItemProxy */;
-		};
 		242D4FF01A64B6FA0026ABC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 242D4FD41A64B6FA0026ABC6 /* MVVMReactiveCocoa */;
@@ -2229,7 +2164,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chunfeng Lei (5M34Q825AP)";
-				DEVELOPMENT_TEAM = V45CY933KN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JT87XR82RB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MVVMReactiveCocoa-dkjcswigkwolokaimgekabgjuzne/Build/Products/Debug",
@@ -2259,8 +2195,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leichunfeng.MVVMReactiveCocoa;
 				PRODUCT_NAME = GitBucket;
-				PROVISIONING_PROFILE = "f2d7027c-e4fa-4493-b212-f488ed36b32e";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Development: MVVMReactiveCocoa";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2271,8 +2207,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Chunfeng Lei (V45CY933KN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chunfeng Lei (V45CY933KN)";
-				DEVELOPMENT_TEAM = V45CY933KN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JT87XR82RB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MVVMReactiveCocoa-dkjcswigkwolokaimgekabgjuzne/Build/Products/Debug",
@@ -2302,8 +2238,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leichunfeng.MVVMReactiveCocoa;
 				PRODUCT_NAME = GitBucket;
-				PROVISIONING_PROFILE = "2c0b57c2-b051-442f-9863-d20daa08bb05";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Distribution: MVVMReactiveCocoa";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
